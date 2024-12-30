@@ -6,7 +6,7 @@ import CardView from '../Screen/CardView';
 import axios from 'axios';
 import { dummyAirlineData } from '@/scripts/DummyData';
 import { FontAwesome } from '@expo/vector-icons';
-import { RootStackParamList } from '@/scripts/RootStackParamList'; // Correct import for your navigation types
+import { RootStackParamList } from '@/scripts/RootStackParamList'; 
 import { StackNavigationProp } from '@react-navigation/stack';
 
 interface Airline {
@@ -20,7 +20,7 @@ interface Airline {
   available: boolean;
 }
 
-// Define the navigation prop type for this screen
+
 type HomeScreenNavigationProp = StackNavigationProp<RootStackParamList, 'Home'>;
 
 const HomeScreen: React.FC = () => {
@@ -32,7 +32,7 @@ const HomeScreen: React.FC = () => {
   const [error, setError] = useState<string>('');
   const navigation = useNavigation<HomeScreenNavigationProp>();
 
-  // Fetch airline data from API
+ 
   const fetchAirlineData = async (airlineCode: string) => {
     try {
       const response = await axios.get(`https://api.adsbdb.com/v0/airline/${airlineCode}`);
@@ -71,7 +71,6 @@ const HomeScreen: React.FC = () => {
       <Text style={styles.helloText}>Hello,</Text>
       <Text style={styles.welcomeText}>{username}</Text>
 
-      {/* Conditionally render the imageContainer */}
       {!loading && !error && (
         <View style={styles.imageContainer}>
           <Image source={require('../assets/images/Ariport.jpg')} style={styles.topImage} />

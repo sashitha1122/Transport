@@ -1,6 +1,6 @@
 import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 import React, { useState } from "react";
-import { FontAwesome } from '@expo/vector-icons'; // Make sure you have react-native-vector-icons installed
+import { FontAwesome } from '@expo/vector-icons'; 
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { StackParamList } from '../scripts/type';

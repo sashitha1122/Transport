@@ -12,7 +12,7 @@ const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    // Ensure that the NavigationContainer is only used here
+
   
       <ClickCountProvider>
         <View style={styles.container}>
@@ -20,7 +20,6 @@ export default function App() {
             <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
             <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
             <Stack.Screen name="Register" component={SignupScreen} options={{ headerShown: false }} />
-            {/* <Stack.Screen name="SavedAirlines" component={SavedAirline} options={{ title: 'Saved Airlines' }} /> */}
           </Stack.Navigator>
         </View>
       </ClickCountProvider>

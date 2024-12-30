@@ -13,6 +13,6 @@ export const dummyAirlineData: Record<string, { image: any }> = {
     "DLH": { image: require('../assets/images/image 12.webp') },
     "THY": { image: require('../assets/images/image11.jpeg') },
     "QFA": { image: require('../assets/images/image 6.jpg') },
-    // Add more airlines with their corresponding image paths here
+    
   };
   
