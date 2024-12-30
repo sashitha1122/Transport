@@ -1,0 +1,2 @@
+export type StackParamList = { Login: undefined; Home: { username: string }; Register: undefined; };
+export interface Item { API: string; Description: string; Auth: string; Category: string; Link: string; }
